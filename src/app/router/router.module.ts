@@ -18,8 +18,8 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(
-    appRoutes,
-      { enableTracing: true }// remove when building
+    appRoutes
+      //,{ enableTracing: true }// remove when building
     )
   ],
   declarations: [],

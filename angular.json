@@ -19,7 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/googleb565065df6073562.html"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"

@@ -283,6 +283,18 @@
     .btn:hover::before{
         left: 100%;
     }
+
+/* Images */
+    .responsive-img{
+        height: 200px;
+        background: url("assets/imgs/profile.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .responsive-img img{
+        width: 100%;
+        height: inherit;
+    }
 /* Colors */
     /* Borders and Backgrouns */
     .prim-bg{
