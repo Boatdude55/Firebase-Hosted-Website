@@ -1,0 +1,7 @@
+<nav class="navbar">
+    <ul>
+        <li class="col-3 col-s-3" *ngFor="let view of menu">
+            <a routerLink="/{{view.path}}" routerLinkActive="active" id="{{view.state}}">{{view.title}}</a>
+        </li>
+    </ul>
+</nav>
