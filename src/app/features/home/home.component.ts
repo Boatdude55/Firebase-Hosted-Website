@@ -18,8 +18,9 @@ export class HomeComponent implements OnInit {
       {
         title: "Courses",
         values: [
-          "CS 120 & 121: C/C++ courses on the principles of Object Oriented Programming, Data Structures, algorithms and design patterns.",
-          "CS 150: Computer architecture class, where the topics included history, transistors/logic gates,  components/instruction cycle, processors and assembly language."
+          "CSC 337:\n\tUse HTML5, CSS, and Javascript/AJAX for event-driven programming on the front-end. Declarative programming with SQL, and PHP\n\tfor server side programming and database access",
+          "CS 120 & 121:\n\tC/C++ courses on the principles of Object Oriented Programming, Data Structures, algorithms and design patterns.",
+          "CS 150:\n\tComputer architecture class, where the topics included history, transistors/logic gates,  components/instruction cycle, processors\n\tand assembly language."
           ]
       }
     ]),
@@ -27,8 +28,8 @@ export class HomeComponent implements OnInit {
       {
         title: "Scholarships and various Awards",
         values: [
-          "Awards",
-          "Achievements and Participation"
+          "Awards: University of Idaho 3rd place in Martin Luther King Jr. Essay Scholarship Contest.",
+          "Achievements and Participation:\n\tOutstanding Participant in National Achievement Program.\n\tNational Merit Scholar Semi Finalist."
           ]
       }
     ]),
@@ -36,9 +37,10 @@ export class HomeComponent implements OnInit {
       {
         title: "Skills",
         values: [
-          "Tools/Platforms: Cloud9, Google Cloud Platform, Git",
-          "Langueges: NodeJS, Angular, HTML, CSS, Javascript, PHP, SQL, Regex",
-          "Developement: Front-End and Proficient with Full-Stack( XAMPP and MEAN )"
+            "Javascript: Web API’s, Angular(1+), and competent with JQuery",
+            "Stacks: XAMPP, LAMPP, and MEAN",
+            "Tools: Git, WebPack",
+            "Enviroments:\n\tNode.js, Linux terminal, AWS Cloud9 IDE, and competent with Google Cloud Shell.\n\tGoogle Cloud Platform, Google Developers"
           ]
       }
     ])

@@ -123,8 +123,8 @@
     }
     .list li{
         margin: 0px 0px 10px 0px;
-        font-size: medium;
         color: rgb(0,0,0);
+        line-height: 1.6;
     }
     .list a{
         text-decoration: none;
@@ -132,9 +132,15 @@
     }
     .list dt{
         font-weight: bolder;
+        font-size: large;
     }
     .list dd{
         margin: 10px 0px 10px 10px;
+    }
+    .list pre{
+        white-space: pre-wrap;
+        word-spacing: 8px;
+        font-size: medium;
     }
 /* Tabs */
     /* Colors */
@@ -149,31 +155,50 @@
         cursor: inherit;
         font-size: large;
         position: relative;
-        transition: 0.3s;
+        transition: 0.2s;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
     }
     .tab:hover{
-        border-top: solid 5px rgb(100, 100, 100);
+        border-top: 5px solid transparent;
+        border-image: linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        border-image-slice: 1;
     }
     .on{
-        background-color: rgb(200,200,200);
-        border-top: solid 5px rgb(100, 100, 100);
+        background:
+            -webkit-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        background:
+            -moz-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        background:
+            -o-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        background:
+            linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        border-top: 5px solid transparent;
+        border-image: linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        border-image-slice: 1;
     }
     .on:focus{
         outline: none;
-        background-color: rgb(200,200,200);
-        border-top: solid 5px rgb(100, 100, 100);
+        transition: 0.3s;
     }
     .detail{
+        /*
         box-shadow: 0px 5px 10px 1px rgb(200,200,200);
-        background-color: rgb(200,200,200);
         border-bottom: solid 10px rgb(100, 100, 100);
+        */
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+        border-image-slice: 1;
+        background-color: rgb(255,255,255);
         display: block;
         margin: 0px;
         padding: 50px;
         font-size: medium;
+        transition: 0.3s;
     }
 
 /* Cards */
@@ -230,6 +255,13 @@
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -o-transition: 0.2s;
+    }
+    .btn a{
+        text-decoration: none;
+        color: rgb(255,255,255);
+    }
+    .btn a:focus{
+        outline: none;
     }
     .btn::before{
         content: '';
@@ -369,6 +401,13 @@
         background-color: rgb(255,80,120);
     }
 /* Special */
+
+    #about-me{
+        
+    }
+    #about-me pre{
+        line-height: 1.6;
+    }
     .advert-text{
         position: relative;
         text-transform: uppercase;
@@ -378,7 +417,6 @@
         border: none;
         text-align: center;
         padding: 10px;
-        margin: 0px auto;
         color: rgb(250,230,80);
         width: 30%;
         background:
@@ -390,3 +428,139 @@
         background:
             linear-gradient( -45deg, rgb(30,140,130), rgb(100,210,200) ); 
     }
+    .hover-effect{
+        
+    }
+    
+    #summary-content{
+
+    }
+    /* Summary Component 
+        #summary-component{
+            position: relative;
+            transition: 0.3s;
+        }
+        #summary-component::before{
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            right: 75%;
+        	width: 0;
+        	height: 0;
+        	border-bottom: 50px solid rgb(100,30,240);;
+        	border-right: 295px solid transparent;
+            z-index: 3;
+            transition: 0.3s;
+        }
+        #summary-component:before{
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            right: 75%;
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid rgb(100,30,240);;
+            border-right: 295px solid transparent;
+            z-index: 3;
+            transition: 0.3s;
+        }
+        #summary-component::after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 75%;
+        	border-top: 50px solid rgb(100,30,240);;
+        	border-left: 295px solid transparent;
+            transition: 0.3s;
+        }
+        #summary-component:after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 75%;
+        	border-top: 50px solid rgb(100,30,240);;
+        	border-left: 295px solid transparent;
+            transition: 0.3s;
+        }
+        
+        #summary-content{
+            position: relative;
+            transition: 0.3s;
+        }
+        #summary-content::before{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+            bottom: 0%;
+            right: 95%;
+        	border-bottom: 300px solid rgb(255,80,120);
+        	border-right: 50px solid transparent;
+            transition: 0.3s;
+        }
+        #summary-content:before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: 0%;
+            right: 95%;
+            border-bottom: 300px solid rgb(255,80,120);
+            border-right: 50px solid transparent;
+            transition: 0.3s;
+        }
+        #summary-content::after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 95%;
+        	border-top: 300px solid rgb(255,80,120);
+        	border-left: 50px solid transparent;
+            transition: 0.3s;
+        }
+        #summary-content:after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 95%;
+        	border-top: 300px solid rgb(255,80,120);
+        	border-left: 50px solid transparent;
+            transition: 0.3s;
+        }
+    */
+        /* Effects */
+            /* Hover 
+            #summary-component:hover::before{
+                right: 74%;
+            }
+            #summary-component:hover:before{
+                right: 74%;
+            }
+            #summary-component:hover::after{
+                left: 74%;
+            }
+            #summary-component:hover:after{
+                left: 74%;
+            }
+            
+            #summary-content:hover::before{
+                bottom: 7%;
+            }
+            #summary-content:hover:before{
+                bottom: 7%;
+            }
+            #summary-content:hover::after{
+                top: 7%;
+            }
+            #summary-content:hover:after{
+                top: 7%;
+            }
+            */

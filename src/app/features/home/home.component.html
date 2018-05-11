@@ -1,6 +1,6 @@
 <div>
     <div class="row head-container">
-        <h3>About Me</h3>
+        <h1>About Me</h1>
     </div>
     <div class="row main-container">
         <div class="row main-content">
@@ -8,7 +8,7 @@
                 <div class="responsive-img">
                     <!--<img src="assets/imgs/profile.jpeg">-->
                 </div>
-                <div>
+                <div id="about-me">
                     <pre>
                         I am a former Computer Science major, turned Information Science and Tech. major. I am motivated to learn about and work with web technologies that make data not only accessible, but also more engaging. More specifically, I am interested in how web technologies can be used to make manipulating visual and audio data more engaging.
 
@@ -25,10 +25,10 @@
                     -->
                     <input type="button" class="tab {{detail.state}}" *ngFor="let detail of details" (click)="changeDetail(detail)" value="{{detail.name}}">
                 </div>
-                <div class="row">
+                <div id="summary-component" class="row">
                     <!--<p class="detail"></p>-->
                     
-                    <div class="detail" *ngIf="currDetail">
+                    <div id="summary-content" class="detail" *ngIf="currDetail">
                         <!--
                         <table>
                             <tbody>
@@ -46,7 +46,7 @@
                                 <dl>
                                     <dt>{{content.title}}</dt>
                                     <dd *ngFor="let value of content.values">
-                                        {{value}}
+                                        <pre>{{value}}</pre>
                                     </dd>
                                 </dl>
                             </li>
@@ -63,12 +63,6 @@
         <div class="row tail-content">
             <div class="col-12">
                 <pre>
-                    My computational literacy with C/C++ has given me a great tool kit for growing my pallet of programming skills. Even though I have not been formally taught web development, I have used my literacy to teach myself  the fundamentals and beyond of Javascript, HTML5, and CSS2.
-
-                    As an avid web programmer  I have made sure to become proficient with tools that make development easier, such as the Cloud9 IDE, and Github. Working with these type of tools I have become proficient with debugging, documentation, and management of multiple projects.
-
-                    My work experience is not explicitly related to my field, but I have gained other skills and work strategies that are transferable. I have worked jobs that stress productive customer interactions where I am in a position of expertise, and that emphasize self supervised responsibilities. My strong interest in web development paired with the skills and work ethic I have make me confident in my ability to become a highly productive member of the team.
-
                 </pre>
             </div>
         </div>
