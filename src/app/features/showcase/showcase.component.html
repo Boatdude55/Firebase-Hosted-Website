@@ -1,60 +1,67 @@
 <div>
     <div class="head-container">
-        <h1>Showcase</h1>
+        <h1 class="page-title">Showcase</h1>
     </div>
     <div class="row main-container">
         <div class="row main-content">
+            <div class="col-3">
+                <div class="card">
+                    <h2 class="card-title">
+                        Features
+                    </h2>
+                    <div class="card-content">
+                        <div>
+                            <h4 class="header">Styles</h4>
+                            <button id="green" class="btn" type="button" data-value="green" (click)="changeStyle($event)">green</button>
+            				<button id="orange" class="btn" type="button" data-value="orange" (click)="changeStyle($event)">orange</button>
+            				<button id="red" class="btn" type="button" data-value="red" (click)="changeStyle($event)">red</button>
+            				<button id="black" class="btn" type="button" data-value="black" (click)="changeStyle($event)">black</button>
+            				<button id="blue" class="btn" type="button" data-value="blue" (click)="changeStyle($event)">blue</button>
+            				<button id="purple" class="btn" type="button" data-value="purple" (click)="changeStyle($event)">purple</button>
+            				<button id="grey" class="btn" type="button" data-value="grey" (click)="changeStyle($event)">grey</button>
+            				<button id="light-blue" class="btn" type="button" data-value="light-blue" (click)="changeStyle($event)">light-blue</button>
+                        </div>
+                        <div>
+                            <h4 class="header">Difficulty</h4>
+					    	<button id="bronze" class="btn" type="button" data-value="7" (click)="changeDifficulty($event)">Easy</button>
+            				<button id="silver" class="btn" type="button" data-value="4" (click)="changeDifficulty($event)">Intermediate</button>
+            				<button id="gold" class="btn" type="button" data-value="2" (click)="changeDifficulty($event)">Hard</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn" (click)="newGameEvent()">New Game</button>
+                    </div>
+                </div>
+            </div>
             <div class="col-6">
                 <div>
-                     <canvas id="game" width="800" height="600" style="width: 800px; height: 600px;">
+                     <canvas #canvas id="game-component" width="800" height="600" style="width: 800px; height: 600px;" (click)="clickEvent($event)">
                         Canvas not supported upgrade to evergreen browser
                     </canvas>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <h5 class="card-title">
-                        Features
-                    </h5>
-                    <div class="card-content">
-                        Features
-                    </div>
-                    <div class="card-footer">
-                        Features
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div>
-                    <h4>Description</h4>
-                    <pre>
-                        A minesweeper game built using html5 and JS
-                    </pre>
-                </div>
-                <div>
-                    <h4>Why</h4>
-                    <pre>
-                        Final project for my web programming class CSC 337
-                    </pre>
-                </div>
-                <div>
-                    <h4>How</h4>
-                    <pre>
-                        Built using the Canvas API
-                    </pre>
-                </div>
-                <div>What I learned</div>
+                <!--<div>What I learned</div>-->
             </div>
         </div>
     </div>
     <div class="row tail-container">
-        <div class="row head">
-            <div class="col-12">
-                Resources and Credit
-            </div>
         <div class="row content">
-            <div class="col-12">
-                Resources and Credit Content
+            <div class="col-6">
+                <h3>Resources</h3>
+                <ul class="list">
+                    <li>
+                        <dl>
+                            <dt>Mozilla</dt>
+                            <dd>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank"><pre>Canvas_API</pre></a>
+                            </dd>
+                            <dd>
+                                <a href="https://developer.mozilla.org/en-US/docs/Games" target="_blank"><pre>Game Developement</pre></a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

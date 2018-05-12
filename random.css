@@ -1,0 +1,140 @@
+    /* Summary Component 
+        #summary-component{
+            position: relative;
+            transition: 0.3s;
+        }
+        #summary-component::before{
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            right: 100%;
+        	width: 0;
+        	height: 0;
+            transition: 0.3s;
+        }
+        #summary-component:before{
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            right: 100%;
+            width: 0;
+            height: 0;
+            transition: 0.3s;
+        }
+        #summary-component::after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 100%;
+        	border-top: 50px solid rgb(100,30,240);;
+        	border-left: 295px solid transparent;
+            transition: 0.3s;
+        }
+        #summary-component:after{
+            content: '';
+            position: absolute;
+        	width: 0;
+        	height: 0;
+        	top: 0%;
+        	left: 100%;
+        	border-top: 50px solid rgb(100,30,240);;
+        	border-left: 295px solid transparent;
+            transition: 0.3s;
+        }
+        
+        #summary-content{
+            position: relative;
+            transition: 0.3s;
+        }
+        #summary-content::before{
+            content: '';
+            position: absolute;
+        	width: 50px;
+        	height: 25%;
+            bottom: 0%;
+            right: 99.5%;
+            transition: 0.3s;
+        }
+        #summary-content:before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 25%;
+            bottom: 0%;
+            right: 99.5%;
+            background:
+                -webkit-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -moz-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -o-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            transition: 0.3s;
+        }
+        #summary-content::after{
+            content: '';
+            position: absolute;
+        	width: 50px;
+        	height: 25%;
+        	top: 0%;
+        	left: 99.5%;
+            background:
+                -webkit-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -moz-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -o-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            transition: 0.3s;
+        }
+        #summary-content:after{
+            content: '';
+            position: absolute;
+        	width: 50px;
+        	height: 25%;
+        	top: 0%;
+        	left: 99.5%;
+        	background:
+                -webkit-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -moz-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                -o-linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            background:
+                linear-gradient( -45deg, rgb(140,0,180), rgb(255,80,120) );
+            transition: 0.3s;
+        }
+    */
+        /* Effects */
+            /* Hover 
+            #summary-component:hover::before{
+                right: 74%;
+            }
+            #summary-component:hover:before{
+                right: 74%;
+            }
+            #summary-component:hover::after{
+                left: 74%;
+            }
+            #summary-component:hover:after{
+                left: 74%;
+            }
+            
+            #summary-content:hover::before{
+                height: 50%;
+            }
+            #summary-content:hover:before{
+                height: 50%;
+            }
+            #summary-content:hover::after{
+                height: 50%;
+            }
+            #summary-content:hover:after{
+                height: 50%;
+            }
+            */
+        

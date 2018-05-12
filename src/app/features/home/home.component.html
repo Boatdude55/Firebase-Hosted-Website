@@ -1,12 +1,12 @@
 <div>
     <div class="row head-container">
-        <h1>About Me</h1>
+        <h1 class="page-title">About Me</h1>
     </div>
     <div class="row main-container">
         <div class="row main-content">
-            <div class="col-4">
-                <div class="responsive-img">
-                    <!--<img src="assets/imgs/profile.jpeg">-->
+            <div class="col-3">
+                <div class="responsive-img cool rounded">
+                    <img src="assets/imgs/profile.drawn.png">
                 </div>
                 <div id="about-me">
                     <pre>
@@ -18,29 +18,13 @@
                     </pre>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-2"></div>
+            <div class="col-6">
                 <div class="tab-group">
-                    <!--
-                        <input type="button" class="tab {{detail.state}}" *ngFor="let detail of details" (click)="changeDetail(detail)" value="{{detail.name}}">
-                    -->
-                    <input type="button" class="tab {{detail.state}}" *ngFor="let detail of details" (click)="changeDetail(detail)" value="{{detail.name}}">
+                    <button type="button" class="tab {{detail.state}}" *ngFor="let detail of details" (click)="changeDetail(detail)">{{detail.name}}</button>
                 </div>
                 <div id="summary-component" class="row">
-                    <!--<p class="detail"></p>-->
-                    
                     <div id="summary-content" class="detail" *ngIf="currDetail">
-                        <!--
-                        <table>
-                            <tbody>
-                                <tr *ngFor="let content of currDetail.text.content">
-                                    <caption>{{content.title}}</caption>
-                                    <td *ngFor="let value of content.values">
-                                        {{value}}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        -->
                         <ul class="list">
                             <li *ngFor="let content of currDetail.text.content">
                                 <dl>
@@ -58,7 +42,7 @@
     </div>
     <div class="row tail-container">
         <div class="row tail-head">
-            <h4 class="advert-text">Availale for Hire</h4>
+            <h3 id="advert-text">Availale for Hire</h3>
         </div>
         <div class="row tail-content">
             <div class="col-12">

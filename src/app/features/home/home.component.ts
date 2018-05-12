@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
         this.details[i].state = "";
       }
     }
-    console.log(detail);
+
     this.currDetail = detail;
   }
   
